@@ -13,7 +13,7 @@ export const App: React.FC = () => {
     event.preventDefault();
 
     if (newTodo) {
-      setTodos([...todos, { id: Number(v4()), todo: newTodo, isDone: false }]);
+      setTodos([...todos, { id: v4(), todo: newTodo, isDone: false }]);
       setNewTodo('');
     }
   };
